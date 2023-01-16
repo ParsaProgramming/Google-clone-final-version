@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.top__section {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.top__section li {
+  list-style: none;
+  padding: 5px;
+  margin: 10px;
+}
+.top__section li:nth-child(3) {
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.top__section li:nth-child(3):hover {
+  background: #ebebeb;
+}
+.top__section li a {
+  text-decoration: none;
+  color: #000000;
+}
+.top__section li a:hover {
+  text-decoration: underline;
+}
+.top__section i {
+  font-size: 30px;
+  color: #7e807f;
+}
+.top__section .img__box {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url("../image/avatar.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid #7e807f;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.top__section .img__box:hover {
+  box-shadow: 0px 0px 10px 1px #ebebeb;
+}
+
+.middle__section {
+  text-align: center;
+  margin-top: 140px;
+}
+.middle__section img {
+  width: 300px;
+  height: 100px;
+}
+.middle__section .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+}
+.middle__section .buttons a {
+  background: #ebebeb;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+}
+.middle__section .buttons a:hover {
+  box-shadow: 0px 0px 10px 1px #ebebeb;
+}
+.middle__section .search-bar {
+  border: 2px solid #ebebeb;
+  background: white;
+  width: 600px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: calc(50% - 300px);
+  margin-top: 30px;
+}
+.middle__section .search-bar:hover {
+  box-shadow: 0px 0px 10px 1px #ebebeb;
+}
+.middle__section .search-bar input {
+  width: 85%;
+  padding: 8px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+.middle__section .search-bar i {
+  font-size: 25px;
+  color: #7e807f;
+}
+.middle__section .search-bar .options i {
+  font-size: 25px;
+  color: #7e807f;
+}
+
+.footer {
+  width: 100%;
+  background: #ebebeb;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.footer .container .row div a {
+  text-decoration: none;
+  color: #898c8a;
+}
+.footer .container .row div a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,135 @@
+$light_gray: #ebebeb;
+$box_shadows: 0px 0px 10px 1px $light_gray;
+$text_light_gray: #898c8a;
+$icon_gray: #7e807f;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.top__section {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  li {
+    list-style: none;
+    padding: 5px;
+    margin: 10px;
+    &:nth-child(3) {
+      border-radius: 50%;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      &:hover {
+        background: $light_gray;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: #000000;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  i {
+    font-size: 30px;
+    color: $icon_gray;
+  }
+  .img__box {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url("../image/avatar.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid $icon_gray;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    &:hover {
+      box-shadow: $box_shadows;
+    }
+  }
+}
+
+.middle__section {
+  text-align: center;
+  margin-top: 140px;
+  img {
+    width: 300px;
+    height: 100px;
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    a {
+      background: $light_gray;
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+      margin-left: 20px;
+      &:hover {
+        box-shadow: $box_shadows;
+      }
+    }
+  }
+
+  .search-bar {
+    border: 2px solid $light_gray;
+    background: white;
+    width: 600px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: calc(50% - 300px);
+    margin-top: 30px;
+    &:hover {
+      box-shadow: $box_shadows;
+    }
+    input {
+      width: 85%;
+      padding: 8px;
+      border: none;
+      outline: none;
+      font-size: 20px;
+    }
+    i {
+      font-size: 25px;
+      color: $icon_gray;
+    }
+    .options {
+      i {
+        font-size: 25px;
+        color: $icon_gray;
+      }
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  background: $light_gray;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  .container {
+    .row {
+      div {
+        a {
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
