@@ -13,7 +13,7 @@ $icon_white: #fff;
 
 .middle__section {
   text-align: center;
-  margin-top: 140px;
+  margin-top: 250px;
   img {
     width: 320px;
     height: 100px;
@@ -190,4 +190,10 @@ $icon_white: #fff;
     opacity: 1;
     z-index: 2;
   }
+}
+
+h5{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
