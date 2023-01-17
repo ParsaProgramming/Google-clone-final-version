@@ -1,59 +1,14 @@
 $light_gray: #ebebeb;
 $box_shadows: 0px 0px 10px 1px $light_gray;
-$text_light_gray: #5A5A5A;
+$text_light_gray: #5a5a5a;
 $icon_gray: #7e807f;
-$icon_white: #FFF;
+$icon_white: #fff;
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   user-select: none;
-}
-.top__section {
-  margin: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  li {
-    list-style: none;
-    padding: 5px;
-    margin: 10px;
-    &:nth-child(3) {
-      border-radius: 50%;
-      transition: all 0.2s ease;
-      cursor: pointer;
-      &:hover {
-        background: $light_gray;
-      }
-    }
-    a {
-      text-decoration: none;
-      color: #000000;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-  i {
-    font-size: 30px;
-    color: $icon_gray;
-  }
-  .img__box {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-image: url("../image/avatar.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 2px solid $icon_gray;
-    transition: all 0.2s ease;
-    cursor: pointer;
-    &:hover {
-      box-shadow: $box_shadows;
-    }
-  }
 }
 
 .middle__section {
@@ -68,7 +23,7 @@ $icon_white: #FFF;
     align-items: center;
     justify-content: center;
     margin-top: 120px;
-    button{
+    button {
       padding: 10px;
       margin-left: 10px;
       background: transparent;
@@ -77,7 +32,7 @@ $icon_white: #FFF;
       border-radius: 10px;
       transition: all 0.3s ease;
       color: $icon_white;
-      &:hover{
+      &:hover {
         background: rgba(255, 255, 255, 0.295);
       }
     }
@@ -138,7 +93,7 @@ $icon_white: #FFF;
   }
 }
 
-.bg-place{
+.bg-place {
   width: 100%;
   height: 100%;
   background-image: url("../image/bg.jpg");
@@ -147,7 +102,7 @@ $icon_white: #FFF;
   background-repeat: no-repeat;
   position: absolute;
   z-index: -1;
-  top:0;
+  top: 0;
   left: 0;
 }
 
@@ -165,11 +120,47 @@ $icon_white: #FFF;
   opacity: 0.7;
   cursor: pointer;
   transition: all 0.2s ease;
-  &:hover{
+  &:hover {
     opacity: 1;
   }
-  i{
+  i {
     font-size: 25px;
-    color:$icon_white;
+    color: $icon_white;
   }
+}
+.popup-settings{
+  opacity: 1;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 600px;
+  backdrop-filter: blur(20px) brightness(0.4);
+  z-index: 2;
+  border-radius: 5px;
+  transition: all .2s ease;
+  z-index:2;
+  .row{
+    .col-md-4{
+      .menu{
+        position: absolute;
+        height: 100%;
+        width:250px;
+        backdrop-filter: blur(20px);
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px 0px 0px 5px;
+        li{
+          list-style: none;
+          border-radius: 0px 5px 5px 0px;
+          background: rgba(0, 204, 255, 0.264);
+        }
+      }
+    }
+  }
+  // &.show{
+  //   opacity: 1;
+  //   z-index: 2;
+  // }
 }
