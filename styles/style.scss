@@ -129,6 +129,8 @@ $icon_white: #fff;
   }
 }
 .popup-settings{
+  overflow-y: auto;
+  overflow-x: hidden;
   opacity: 1;
   position: absolute;
   top:50%;
@@ -154,7 +156,28 @@ $icon_white: #fff;
         li{
           list-style: none;
           border-radius: 0px 5px 5px 0px;
-          background: rgba(0, 204, 255, 0.264);
+          background: rgba(42, 42, 42, 0.25);
+          border-radius: 5px;
+          cursor: pointer;
+          border-left: 3px solid rgb(0, 94, 255);
+          transition: all 0.2s ease;
+
+          &:hover{
+            border-left: 10px solid rgb(0, 94, 255);
+          }
+        }
+      }
+    }
+    .col-md-8{
+      .row{
+        .col-md-4{
+          width: 200px;
+          height: 200px;
+          background-image: url("../image/bg3.jfif");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          cursor: pointer;
         }
       }
     }
