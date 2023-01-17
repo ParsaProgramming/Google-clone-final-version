@@ -116,8 +116,20 @@
 }
 .footer .container .row div a {
   text-decoration: none;
-  color: #898c8a;
 }
 .footer .container .row div a:hover {
   text-decoration: underline;
+}
+
+.bg-place {
+  width: 100%;
+  height: 100%;
+  background-image: url("../image/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }/*# sourceMappingURL=style.css.map */
