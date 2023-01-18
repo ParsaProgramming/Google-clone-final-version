@@ -10,6 +10,19 @@ $icon_white: #fff;
   box-sizing: border-box;
   user-select: none;
 }
+::-webkit-scrollbar {
+  width: 8px;
+  }
+
+::-webkit-scrollbar-track {
+  border-radius: 50px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: $icon_white; 
+  }
 
 .middle__section {
   text-align: center;
@@ -74,16 +87,17 @@ $icon_white: #fff;
 }
 
 .bg-place {
-  width: 100%;
-  height: 100%;
-  background-image: url("../image/bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
+  img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
 }
 
 .setting-icon {
@@ -110,7 +124,7 @@ $icon_white: #fff;
   }
 }
 .popup-settings {
-  display: block;
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -118,81 +132,78 @@ $icon_white: #fff;
   width: 800px;
   height: 600px;
   z-index: 2;
- backdrop-filter: blur(20px) brightness(0.4);
- border-radius: 10px 10px 0px 0px;
- display: flex;
- align-items: center;
- justify-content: center;
- .access{
-  position: relative;
-  height: 100%;
-  width: 40%;
-  div{
-    position: relative;
+  backdrop-filter: blur(20px) brightness(0.4);
+  border-radius: 10px 10px 0px 0px;
+  &.show {
     display: flex;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 10px;
-    width: 90%;
-    overflow: hidden;
-    cursor: pointer;
-    &::before{
-      content:'';
-      display: block;
-      position: absolute;
-      top: 0%;
-      left: -98%;
-      background: #4b7bec;
-      height: 100%;
-      width: 100%;
-      transition: all 0.3s ease;
-    }
-    &:hover{
-      &::before{
-        left: 0%;
-      }
-    }
-    &:first-child{
-      &::before{
-        left: 0%;
-      }
-    }
-    span{
-      font-size: 20px;
-      position: relative;
-    }
-    i{
-      position: relative;
-    }
-
+    z-index: 2;
   }
-  button{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-  }
- }
- .option{
-  position: relative;
-  height: 100%;
-  width: 60%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  .row{
-    .col{
+  .access {
+    position: relative;
+    height: 100%;
+    width: 40%;
+    div {
+      position: relative;
+      display: flex;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      width: 90%;
+      overflow: hidden;
       cursor: pointer;
-      img{
-        width:100%;
-        height: 250px;
-        border: 2px solid white;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0%;
+        left: -98%;
+        background: #4b7bec;
+        height: 100%;
+        width: 100%;
+        transition: all 0.3s ease;
+      }
+      &:hover {
+        &::before {
+          left: 0%;
+        }
+      }
+      &:first-child {
+        &::before {
+          left: 0%;
+        }
+      }
+      span {
+        font-size: 20px;
+        position: relative;
+      }
+      i {
+        position: relative;
+      }
+    }
+    button {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+    }
+  }
+  .option {
+    position: relative;
+    height: 100%;
+    width: 60%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .row {
+      .col {
+        cursor: pointer;
+        img {
+          width: 100%;
+          height: 250px;
+          border: 2px solid white;
+          border-radius: 10px;
+        }
       }
     }
   }
- }
-  // &.show {
-  //   display: block;
-  //   z-index: 2;
-  // }
 }
 
 .top-section {
